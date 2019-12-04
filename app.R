@@ -1,4 +1,4 @@
-#TAAD
+##TAAD
 
 library(shiny)
 library(ggplot2)
@@ -23,7 +23,6 @@ library(janitor)
 
 options(width=250)
 
-#setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 source(paste(getwd(),"","/Functions/grubbs_method.R",sep=""))
 source(paste(getwd(),"/Functions/decomposition_method.R",sep=""))
