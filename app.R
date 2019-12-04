@@ -1,4 +1,4 @@
-.libPaths("C:\\Users\\sandu\\Documents\\R\\win-library\\3.5")
+#TAAD
 
 library(shiny)
 library(ggplot2)
@@ -23,7 +23,7 @@ library(janitor)
 
 options(width=250)
 
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+#setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 source(paste(getwd(),"","/Functions/grubbs_method.R",sep=""))
 source(paste(getwd(),"/Functions/decomposition_method.R",sep=""))
