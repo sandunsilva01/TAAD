@@ -17,11 +17,30 @@ To install and explore the application in your R, you could type the following o
 
                                             runGitHub( "TAAD", "sandunsilva01") 
                                             
-This application includes two main parts namely a ‘descriptive analysis window’ and a ‘panel of statistical methods’. Figure 2 illustrates the interface of the TAAD application.
+This application includes two main parts namely a ‘descriptive analysis window’ and a ‘panel of statistical methods’. Figure 1 illustrates the interface of the TAAD application.
 
 ![alt text](https://github.com/sandunsilva01/TAAD/blob/master/fig2_Abnormal_activities_detector_interface.png)
 
-Figure 2 The abnormal activities detector interface.The ‘Descriptive analysis window’ includes plots to visualise the step count distributions and trajectories of participants, along with the descriptive statistics of each and every main physical activity (e.g:swimming, cycling etc), up to the current time point. This will provide the customer service attendant with comprehensive background information about the participant’s physical activity. This window also indicates whether this profile belongs to a suspected ‘person of interest’ as identified by the previous ‘person of interest detector’ classifier. Figure number 2 shows a set of screenshots of the ‘Panel of statistical methods’, which allows the customer service attendants to analyse the anomalies/outliers that exist in each participant’s profile using four main statistical methods, each possessing different strengths, as described below. User could also refer the paper, the authors have published in order to find out further about these methods. 
+Figure 1 The abnormal activities detector interface.
+
+The user can use the "NewDataToCheckTheApp.csv" file to test the application. In this file there are 13 columns with following column headings. 
+
+1. "MemberID" - Identifier to participant 
+2. "EventDay" - Event Day of the program
+3. "CreatedDate" - Date that the specific step entry created
+4. "BikeSteps" - Step counts conversion of the bike ride 
+5. "WalkSteps" - Step counts collected by walking
+6. "SwimSteps" - Step counts conversion of swimming 
+7. "OtherSteps" - Step count conversion of other physical activities done
+8. "TotalSteps" - Total step counts
+9. "SpeedCheck" - Decision of the speedchek process 
+10. "Channel" - Channel which sync the step counts
+11. "DeviceType" - Device type the step counts collected
+12. "CheaterProb" - Cheating probability computed by the "person of interest detector" model
+13. "ProgramDate" - Actual Date of the event
+
+First the user needs to upload the csv file in to the application and then select a time range for the step count to analyse. 
+The ‘Descriptive analysis window’ includes plots to visualise the step count distributions and trajectories of participants, along with the descriptive statistics of each and every main physical activity (e.g:swimming, cycling etc), up to the current time point. This will provide the customer service attendant with comprehensive background information about the participant’s physical activity. This window also indicates whether this profile belongs to a suspected ‘person of interest’ as identified by the previous ‘person of interest detector’ classifier. Figure number 2 shows a set of screenshots of the ‘Panel of statistical methods’, which allows the customer service attendants to analyse the anomalies/outliers that exist in each participant’s profile using four main statistical methods, each possessing different strengths, as described below. User could also refer the paper, the authors have published in order to find out further about these methods. 
 
 ![alt text](https://github.com/sandunsilva01/TAAD/blob/master/fig3_Screen_shots_of_all_the_tabs_in_statistical_panel_for_detecting_outliers.jpg)
 
