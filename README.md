@@ -14,6 +14,7 @@ Australia
 The TAAD detects the outliers and anomalies that exist in the step counts of participants. When a step entry has been detected as an outlier/anomaly, the participants are asked to provide a valid reason for that specific step entry. Customer service attendants of these physical activity programs check and, if necessary, they remove these data points manually. However, this process is very subjective and highly time consuming. To alleviate this problem, we have developed an automated tool known as ‘the abnormal activities detector’ (TAAD) using the R Shiny (Chang et al., 2018) environment to detect multiple outliers in step entries, while allowing the customer representatives to investigate the detected outliers more effectively and efficiently. 
 
 To install and explore the application in your R, you could type the following on your r console. 
+
                                             runGitHub( "TAAD", "sandunsilva01") 
                                             
 This application includes two main parts namely a ‘descriptive analysis window’ and a ‘panel of statistical methods’. Figure 2 illustrates the interface of the TAAD application.
