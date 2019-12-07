@@ -6,15 +6,15 @@ library(shinythemes)
 library(DMwR)
 library(outliers)
 library(data.table)
-library(Rcpp)
+#library(Rcpp)
 library(plotly)
 library(tibbletime)
 library(anomalize)
 library(tidyverse)
-library(rlang)
-library(lubridate)  #manipulation of dates
-library(magrittr)
-library(shinyBS)
+#library(rlang)
+#library(lubridate)  #manipulation of dates
+#library(magrittr)
+#library(shinyBS)
 library(graphics)
 library(crayon)
 library(DT)
@@ -22,7 +22,6 @@ library(Hmisc)
 library(janitor)
 
 options(width=250)
-
 
 source(paste(getwd(),"","/Functions/grubbs_method.R",sep=""))
 source(paste(getwd(),"/Functions/decomposition_method.R",sep=""))
@@ -260,7 +259,7 @@ server<-function(input,output){
   #Summary Table
   
   output$summary<-renderPrint({
-    describe(new_data()[c("WalkSteps","SwimSteps","BikeSteps","OtherSteps","TotalSteps","Channel","DeviceType")],
+   Hmisc::describe(new_data()[c("WalkSteps","SwimSteps","BikeSteps","OtherSteps","TotalSteps","Channel","DeviceType")],
              descript ="Descriptive Analysis",scroll=TRUE)
   }, width=getOption("width")
   )
