@@ -2,7 +2,7 @@
 
 Decomposition.method<-function(x,DecomposeMethod,seasonalwindow,trendwindow,anmethod){
   
-  x$ProgramDate<-strptime(x$ProgramDate,format = "%d/%m/%Y") #adjust the format according to the data provided
+  x$ProgramDate<-strptime(x$ProgramDate,format = "%Y-%m-%d") #adjust the format according to the data provided
   x$ProgramDate<-as.Date.character(x$ProgramDate)
   x<- as_tbl_time(x, ProgramDate)
   x<-x[order(x$ProgramDate),]
