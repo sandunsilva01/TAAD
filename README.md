@@ -15,7 +15,7 @@ The TAAD detects the outliers and anomalies that exist in the step counts of par
 
 To install and explore the application in your R, you could type the following on your r console. 
 
-                                            runGitHub( "TAAD", "sandunsilva01") 
+                                            shiny::runGitHub( "TAAD", "sandunsilva01") 
                                             
 This application includes two main parts namely a ‘descriptive analysis window’ and a ‘panel of statistical methods’. Figure 1 illustrates the interface of the TAAD application.
 
