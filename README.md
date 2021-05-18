@@ -1,5 +1,5 @@
 # TAAD
-## The Abnormal Activities Detector
+## R Shiny based: The Abnormal Activities Detector
 
 Detecting possible persons of interest in a physical activity program using step entries: including a web based application for outlier detection and decision making
 
